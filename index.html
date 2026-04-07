@@ -11,11 +11,16 @@
   <!-- Compteur de visites -->
 <h2>Nombre de visites :</h2>
 
-<!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com/" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=21487705&style=0001&nbdigits=3&type=ip&initCount=0" title="Free Tools" Alt="Free Tools"   border="0" /></a>    
+<img src="https://visitor-badge.laobi.icu/badge?page_id=cyber-exercice" />
 
-  <script type="text/javascript" src="https://www.compteur-visite.com/script.js"></script>
+  <script>
+let count = localStorage.getItem('visits') || 0;
+count++;
+localStorage.setItem('visits', count);
+document.write("Visites (locales) : " + count);
+</script>
 
+<img src="https://komarev.com/ghpvc/?username=olty-hu&label=Visites&color=blue" />
+  
 </body>
 </html>

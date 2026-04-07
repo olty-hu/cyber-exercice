@@ -20,5 +20,17 @@ localStorage.setItem('visits', count);
 document.write("Visites (locales) : " + count);
 </script>
 
+  <script>
+if (!localStorage.getItem('visited')) {
+  localStorage.setItem('visited', 'true');
+
+  let uniques = localStorage.getItem('uniqueCount') || 0;
+  uniques++;
+  localStorage.setItem('uniqueCount', uniques);
+}
+
+document.write("Utilisateur unique (local) : " + (localStorage.getItem('uniqueCount') || 1));
+</script>
+
 </body>
 </html>
